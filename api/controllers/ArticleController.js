@@ -56,6 +56,12 @@ module.exports = {
             }
             res.redirect('/article/afficher');
         });
-    }
+    },
+
+
+    //route personalisée
+    categorie: function (req, res) {
+        res.view('categorie');
+   },
 };
 
