@@ -1,0 +1,6 @@
+<h1>Liste Articles</h1>
+<% articles.forEach(function(article) { %>
+    <%= article.title %> <%= article.body %> <a href="/article/modifier/<%= article.id %>">Modifier</a><form action="/article/supprimer/<%= article.id %>" method="post">
+    <button type="submit">Supprimer</button></form><br>
+<% }) %>
+<a href="/article/ajouter"><button type="button" class="btn btn-primary btn-lg">Ajouter</button></a>
